@@ -1,4 +1,4 @@
-@import "css/department/home.css";
+@import "/css/department/home.css";
 
 #wrapper {
   width: 860px;
@@ -11,25 +11,25 @@
 
 #header {
   height: 123px;
-  background: url("images/layout/header_bg_catalyst.png") no-repeat;
+  background: url("/images/layout/header_bg_catalyst.png") no-repeat;
   border: solid 1px rgb(255,255,255);
   border-bottom: solid 1px rgb(238,238,238);
 }
 
 .control #header {
-  background: url("images/layout/header_bg_control.png") no-repeat;
+  background: url("/images/layout/header_bg_control.png") no-repeat;
 }
 
 .documentation #header {
-  background: url("images/layout/header_bg_documentation.png") no-repeat;
+  background: url("/images/layout/header_bg_documentation.png") no-repeat;
 }
 
 .model #header {
-  background: url("images/layout/header_bg_model.png") no-repeat;
+  background: url("/images/layout/header_bg_model.png") no-repeat;
 }
 
 .view #header {
-  background: url("images/layout/header_bg_view.png") no-repeat;
+  background: url("/images/layout/header_bg_view.png") no-repeat;
 }
 
 #header h1 {
@@ -39,7 +39,7 @@
   margin: 0;
   width: 170px;
   height: 58px;
-  background: url("images/layout/catalyst_170pix.png");
+  background: url("/images/layout/catalyst_170pix.png");
 }
 
 #header h1 a {
@@ -102,7 +102,7 @@
 .developer #menu_global #developer,
 .download #menu_global #download,
 .support #menu_global #support {
-  background: rgb(255,255,255) url("images/layout/menu_global_bg_left.png") top left no-repeat;
+  background: rgb(255,255,255) url("/images/layout/menu_global_bg_left.png") top left no-repeat;
 }
 
 .home #home div,
@@ -113,7 +113,7 @@
 .support #support div {
   cursor: default;
   color: rgb(85,85,85);
-  background: url("images/layout/menu_global_bg_right.png") top right no-repeat;
+  background: url("/images/layout/menu_global_bg_right.png") top right no-repeat;
 }
 
 html>body #menu_global div { 
@@ -132,7 +132,7 @@ html>body #menu_global div {
 .support #support span {
   cursor: default;
   display: block;
-  background: url("images/layout/menu_global_bg_right.png") top right no-repeat;
+  background: url("/images/layout/menu_global_bg_right.png") top right no-repeat;
 }
 
 .home #home span a,
@@ -259,7 +259,7 @@ html>body #menu_global span {
 .box {
   width: 260px;
   margin-top: 0;
-  background: url("images/global/box_bg_gray.png") top right no-repeat; 
+  background: url("/images/global/box_bg_gray.png") top right no-repeat; 
 }
 
 .left {
@@ -279,22 +279,22 @@ html>body #menu_global span {
   padding: 13px 10px 15px 10px;
   font-size: 1.1em;
   font-weight: bold;
-  background: url("images/global/box_bg_left.png") top left no-repeat;
+  background: url("/images/global/box_bg_left.png") top left no-repeat;
 }
 
 .development dt {
   padding-left: 54px;
-  background-image: url("images/global/box_icon_development.png");
+  background-image: url("/images/global/box_icon_development.png");
 }
 
 .deployment dt {
   padding-left: 54px;
-  background-image: url("images/global/box_icon_deployment.png");
+  background-image: url("/images/global/box_icon_deployment.png");
 }
 
 .scalability dt {
   padding-left: 54px;
-  background-image: url("images/global/box_icon_scalability.png");
+  background-image: url("/images/global/box_icon_scalability.png");
 }
 
 .box dd {
