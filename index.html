@@ -9,7 +9,7 @@
 		<!--[if lt IE 7]>
 		<link rel="stylesheet" type="text/css" href="/css/global/ie.css" media="screen" />
 		<![endif]-->
-		<link rel="shortcut icon" href="catalyst.ico" />
+		<link rel="shortcut icon" href="/catalyst.ico" />
 	</head>
 	<body class="home">
 		<div id="wrapper">
@@ -25,11 +25,11 @@
 				</form>		        
 		        <ul id="menu_global">
 		            <li id="home"><span><a href="/">Home</a></span></li>		            
-		            <li id="community"><span><a href="/">Community</a></span></li>
-		            <li id="documentation"><span><a href="/">Documentation</a></span></li>
-		            <li id="developer"><span><a href="/">Developer</a></span></li>
-		            <li id="download"><span><a href="/">Download</a></span></li>
-		            <li id="support"><span><a href="/">Support</a></span></li>
+		            <li id="community"><span><a href="/community.html">Community</a></span></li>
+		            <li id="documentation"><span><a href="http://search.cpan.org/~mramberg/Catalyst/lib/Catalyst/Manual.pod">Documentation</a></span></li>
+		            <li id="developer"><span><a href="http://dev.catalyst.perl.org/">Developer</a></span></li>
+		            <li id="download"><span><a href="http://search.cpan.org/~mramberg/Catalyst/">Download</a></span></li>
+		            <li id="support"><span><a href="/support.html">Support</a></span></li>
 		        </ul>
 		    </div>
 		    <div id="main">
@@ -38,12 +38,20 @@
 		        </div>		        		        	        
 				<div class="content fullwidth catch">
 					<h1>
-					  Because freedom matters
-					</h1>
-					<p>
-					  Catalyst is a web framework that lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et 
-					  dolore magna aliqua. 
-					</p>
+	The elegant MVC framework
+</h1>
+<p>
+	Catalyst is:
+	<ul>
+		<li>Smart for you so you don't have to be</li>
+		<li>Making programming fun again</li>
+		<li>Too smart, but it's for your own good</li>
+	</ul>
+	<hr />
+	... because freedom matters!
+</p>
+
+
 				</div>					
 				<hr class="hidden" />
 				<dl class="box left development">
@@ -51,18 +59,22 @@
 					  Development
 					</dt>
 					<dd>
-					    <p>
-						  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-						  Ut enim ad minim veniam, quis nostrud exercitation ullamco <strong>KISS</strong>, <strong>DRY</strong> and <strong>TIMTOWTDI</strong> laboris nisi ut aliquip ex ea commodo consequat. 
-						</p>
 						<p>
-						  Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-						  Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum  
-						</p>
-						<p>
-						  Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-						  Excepteur sint occaecat cupidatat non proident, and <a href="#">Catalyst lets you develop faster</a> sunt in culpa qui officia deserunt mollit anim id est laborum  
-						</p>
+Catalyst's philosphy is based on the <acronym title="Keep It Small and Simple">KISS</acronym>, <acronym title="Don't Repeat Yourself">DRY</acronym> and <acronym title="There Is More Than One Way To Do It">TIMTOWTDI</acronym> principles. 
+</p>
+<p>
+	Keeping it simple and small leads to more robust and scalable applications.
+</p>
+<p>
+	The second of these principles allow you to quickly implement new features so you can <em>Release Early, Release Often</em> and thus <a href="http://www.agilemanifesto.org/">Get On With It</a>
+</p>
+<p>
+	<em>There Is More Than One Way To Do It</em> means you can choose from a wealth of models, views and plugins, the ones that fit you best. Wether you like <a href="http://search.cpan.org/dist/DBIx-Class/">DBIx::Class</a>, <a href="http://search.cpan.org/dist/Class-DBI-Sweet/">Class::DBI::Sweet</a> or <a href="http://search.cpan.org/dist/Class-DBI/">Class::DBI</a>, wether you prefer <a href="http://www.template-toolkit.org/">Template Toolkit</a>, <a href="http://www.masonhq.com/">Mason</a> or <a href="http://search.cpan.org/dist/HTML-Template/">HTML::Template</a>, if you want sessions, form validation or authentication, you can have any or all of them. 
+</p>
+<p>
+	Catalyst comes with its own test server which allows you to start a lightweight application webserver without having to setup a full webserver for development. On Unix and Linux it will even restart itself when it detects that sources have changed to allow you to see results instantly!
+</p>
+
 					</dd>
 				</dl>
 				<dl class="box middle deployment">
@@ -71,17 +83,24 @@
 					</dt>
 					<dd>
 						<p>
-						  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-					 	</p>
-						<p>
-						  Ut enim ad minim veniam, <strong>IIS</strong>, <strong>Zeus</strong>, <strong>Apache</strong>, <strong>lighttpd</strong> quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-						</p>
-						<p>
-						  Excepteur sint occaecat cupidatat non proident, sunt and Catalyst allows you to <a href="#">deploy on a system of your choise</a> culpa qui officia deserunt mollit anim id est laborum.
-						</p>
-						<p>
-						  <img src="/images/department/home/deployment_os_logos.png" alt="OS logos" />
-						</p>						
+  You can deploy your Catalyst application on <a href="http://www.freebsd.org/">FreeBSD</a>, <a href="http://www.linux.org/">Linux</a>, <a href="http://www.apple.com/macosx/">Mac OS X</a>, <a href="http://www.sun.com/">Solaris</a> or <a href="http://www.microsoft.com/windowsserver2003/">Windows</a>.
+</p>
+<p>
+  Do you have a favorite web server? Catalyst can run under <strong>IIS</strong>, <strong>Zeus</strong>, <strong>Apache</strong>, <strong>lighttpd</strong> either as CGI or <a href="http://www.fastcgi.com/">FastCGI</a> application. 
+  If you use <strong>Apache</strong> you can also run your application with <a href="http://www.daemoninc.com/SpeedyCGI/">SpeedyCGI</a> or <a href="http://perl.apache.org/">mod_perl</a> (any version).
+  You don't need no steenkin' server? OK, roll your own either with Perl's own <a href="http://search.cpan.org/dist/libwww-perl/">libwww</a> (<a href="http://search.cpan.org/dist/libwww-perl/lib/HTTP/Daemon.pm">HTTP::Daemon</a>) or with <a href="http://poe.perl.org/">POE's</a> <a href="http://search.cpan.org/dist/POE-Component-Server-HTTP/">PoCo::Server::HTTP</a>.
+</p>
+<p>
+	Catalyst supports a wide range of data storage from generic relational databases (MySQL, PostgreSQL, SQLite, Oracle, DB2, Informix, Sybase, Ingres, InterBase/FireBird, XBase, SQLFLEX, ODBC or ADO), through <a href="http://www.openldap.org/">LDAP</a> up to specific storage like events and venues (<a href="http://eventful.com/">EVDB</a>), genealogy files (<a href="http://www.genserv.com/">Gedcom</a>). 
+	You can use your own data or data sources like <a href="http://search.cpan.org/dist/DBD-Amazon/">Amazon</a> or an <a href="http://search.cpan.org/dist/DBD-iPod/">iPod</a>. You can even go as low-tech as to store your data in <a href="http://en.wikipedia.org/wiki/Comma-separated_values">CSV</a> format. Catalyst can do it all.
+</p>
+<p>
+	With it's wide support of operating systems, application servers and data storage systems, Catalyst allows you to deploy your applications on a system of your choice or adapt existing applications to take advantage of the benefits Catalyst offers. You don't have to adapt to Catalyst because it can adapt to you. 
+</p>
+<p>
+  <img src="/images/department/home/deployment_os_logos.png" alt="OS logos" />
+</p>						
+
 					</dd>
 				</dl>
 				<dl class="box right scalability">
@@ -90,17 +109,10 @@
 					</dt>
 					<dd>
 						<p>
-					  	  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-					  	  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-					 	</p>
-					 	<p>
-					  	  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-					  	  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-					 	</p>
-						<p>
-					  	  Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla and pariatur <a href="#">Catalyst 
-					  	  allows you to grow</a>. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
-						</p>
+  Catalyst scales. Catalyst allows you to grow.
+</p>
+
+
 					</dd>
 				</dl>
 			</div>
