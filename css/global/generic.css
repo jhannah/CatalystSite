@@ -1,7 +1,7 @@
 body {
   font-family: verdana, sans-serif;
   font-size: .8em;  
-  background: rgb(234,234,234) url("/images/layout/body_bg.png") center repeat-y;
+  background: rgb(234,234,234) url("../../images/layout/body_bg.png") center repeat-y;
   margin: 0;
   color: rgb(30,30,30);
 }
@@ -81,7 +81,7 @@ ul {
 .content ul li {
   list-style-type: none;
   padding-left: 1.5em;
-  background: url("/images/global/list_bullet.png") top left no-repeat;
+  background: url("../../images/global/list_bullet.png") top left no-repeat;
   background-position: .55em .55em;
 }
 
@@ -95,15 +95,15 @@ ul {
 }
 
 h2.icon_control {
-  background: url("/images/global/icon_control.png") top left no-repeat;
+  background: url("../../images/global/icon_control.png") top left no-repeat;
 }
 
 h2.icon_model {
-  background: url("/images/global/icon_model.png") top left no-repeat;
+  background: url("../../images/global/icon_model.png") top left no-repeat;
 }
 
 h2.icon_view {
-  background: url("/images/global/icon_view.png") top left no-repeat;
+  background: url("../../images/global/icon_view.png") top left no-repeat;
 }
 
 h2.icon_control,
