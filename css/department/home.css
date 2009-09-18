@@ -1,3 +1,5 @@
 .catch {
   background: url("../../images/department/home/catch_apple_bg.jpg") top right no-repeat;
 }
+
+.content div { position: relative; top: -10px; } /* Gross hack. Sue me */
