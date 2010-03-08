@@ -101,7 +101,7 @@
 .documentation #menu_global #documentation,
 .developer #menu_global #developer,
 .download #menu_global #download,
-.support #menu_global #support,
+.support #menu_global #support {
   background: rgb(255,255,255) url("../../images/layout/menu_global_bg_left.png") top left no-repeat;
 }
 
