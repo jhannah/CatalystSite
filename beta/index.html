@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Catalyst | Perl MVC web application framework</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta http-equiv="pragma" content="no-cache">
+    <meta http-equiv="expires" content="0">
+    <meta http-equiv="cache-control" content="no-cache">
+    <meta name="author" content="Tobias Kremer // funkreich.de">
+    <meta name="description" content="Catalyst is the most-used agile Perl MVC web framework that encourages rapid development and clean design without getting in your way.">
+    <link rel="stylesheet" type="text/css" href="style.css" media="screen">
+    <link rel="shortcut icon" href="imgs/catalyst.ico">
+</head>
+<body>
+    <header id="logobar">
+        <div class="inner">
+            <form action="http://google.com/cse" id="search" name="search">
+                <input type="hidden" name="cx" value="001489226992342776861:khgrvdklfes">
+                <input type="hidden" name="cof" value="FORID:0">
+                <input name="q" type="text" size="30" placeholder="Search...">
+            </form>
+            <a id="logo" href="/"><img src="imgs/catalyst_logo.png" width="200" height="80" alt="Catalyst Perl MVC framework"></a>
+            <h1>Perl MVC framework</h1>
+        </div>
+    </header>
+    <header id="about">
+        <div class="inner">
+            <div id="download">
+                <a href="https://metacpan.org/module/Catalyst::Runtime"><img src="imgs/dl-hdd.png"></a>
+                <span class="getitnow"><a href="https://metacpan.org/module/Catalyst::Runtime">Get started now!</a></span>
+                <span class="version">Catalyst 5.90010 - 18 Feb 2012</span>
+                <span class="license">Open Source, GPL/Artistic</span>
+            </div>
+            <h2>Turbocharge your web development!</h2>
+            <p>
+                Catalyst is the most popular Perl MVC framework and 
+                makes creating web applications <strong>fun, rewarding and quick</strong>.
+            </p>
+        </div>
+    </header>
+    <nav>
+        <div class="inner">
+            <ul>
+                <li class="active"><a href="/">About</a></li>
+                <li><span><a href="https://metacpan.org/module/Catalyst::Manual">Documentation</a></span></li>
+                <li><span><a href="http://wiki.catalystframework.org/wiki/">Wiki</a></span></li>
+                <li><span><a href="https://metacpan.org/module/Catalyst::Runtime">Download</a></span></li>
+                <li><span><a href="http://wiki.catalystframework.org/wiki/Support">Support</a></span></li>
+                <li><span><a href="https://metacpan.org/module/Catalyst::Manual::Monthly">Catalyst Monthly</a></span></li>
+            </ul>
+        </div>
+    </nav>
+    <article>
+        <div class="inner">
+            <div class="column">
+                <h2>What is Catalyst?</h2>
+                <p>
+                    <strong>Catalyst is an open-source Perl <a href="https://metacpan.org/module/Catalyst::Manual::About#The-MVC-pattern">MVC</a> web framework that encourages 
+                    rapid development and clean design without getting in your way by forcing rules.</strong>
+                </p>
+                <p>
+                    We tend to keep things small and simple. This gives us robustness and scalability - your 
+                    Catalyst-based app also inherits those. No complicated object hierarchies.
+                </p>
+                <p>
+                    Why reinvent the wheel? When you write your app with Catalyst, you don't have to care much 
+                    about session handling or authorization. You just use it. <a href="https://metacpan.org">CPAN</a> has a vast amount of power, 
+                    which we bring to you. If you don't like something in default setup, why not replace it? 
+                    There Is More Than One Way To Do It. You can choose from a wealth of available models and 
+                    views, drop in a bunch of plugins and create the setup that fits you best.
+                </p>
+                <p>
+                    Still not convinced? Check out some <strong><a href="http://wiki.catalystframework.org/wiki/sitesrunningcatalyst">sites that are already using Catalyst</a></strong>.
+                </p>
+                <div id="platforms">
+                    <img src="http://www.catalystframework.org/images/department/home/deployment_os_logos.png">
+                </div>
+            </div>
+            <div class="column special">
+                <h2>Why Catalyst?</h2>
+                <h3>Versatile Models</h3>
+                <p>
+                    Use a powerful database ORM like <a href="https://metacpan.org/module/DBIx::Class">DBIx::Class</a> 
+                    for your model, plain old <a href="https://metacpan.org/module/Catalyst::Model::DBI">DBI</a> 
+                    or even <a href="https://metacpan.org/module/Catalyst::Model::LDAP">LDAP</a> - Catalyst supports a
+                    <a href="https://metacpan.org/search?q=Catalyst%3A%3AModel">wide range of models</a>.
+                </p>
+                <h3>Flexible Views</h3>
+                <p>
+                    Use whatever templating language you like best: 
+                    <a href="http://www.template-toolkit.org/">Template::Toolkit</a>, 
+                    <a href="https://metacpan.org/module/Mason">Mason 2</a>, 
+                    <a href="https://metacpan.org/module/HTML::Template">HTML::Template</a> and many more are fully supported.
+                </p>
+                <h3>Integrated Development server</h3>
+                <p>
+                    Catalyst comes with its own lightweight test server for development. It automatically restarts
+                    when your sources have changed, so you get instant results! 
+                </p>
+                <h3>Works with all major webservers</h3>
+                <p>
+                    Catalyst 5.9 has native <a href="http://plackperl.org/">PSGI/Plack</a> support which makes deployment for most
+                    webservers a no-brainer. Plus, there are loads of <a href="https://metacpan.org/search?q=Catalyst%3A%3AEngine">engines</a> targeting specific servers/protocols like <a href="https://metacpan.org/module/Catalyst::Engine::Apache">Apache/mod_perl</a> or FastCGI.
+                </p>
+                <h3>Ready-to-use plugins</h3>
+                <p>
+                    Don't re-invent the wheel! Use well-tested plug-ins for 
+                    <a href="https://metacpan.org/module/Catalyst::Plugin::Session">session management</a>, 
+                    <a href="https://metacpan.org/module/Catalyst::Plugin::Authentication">user authentication</a>, 
+                    <a href="https://metacpan.org/module/Catalyst::Plugin::Cache">caching</a> and
+                    <a href="https://metacpan.org/search?q=Catalyst%3A%3APlugin&mode=all">much more</a>.
+                </p>            
+            </div>
+            <div class="column last" id="getstarted">
+                <h2>How do I get started?</h2>
+                <ol>
+                    <li>
+                        <a href="https://metacpan.org/module/Catalyst::Runtime">Download</a>
+                        <p>
+                            Get Catalyst. It's open-source and free.
+                        </p>
+                    </li>
+                    <li>
+                        <a href="http://wiki.catalystframework.org/wiki/installingcatalyst">Install</a>
+                        <p>
+                            Find out how to install Catalyst on your FreeBSD, Linux, Mac OS X, Solaris or Windows system.
+                        </p>
+                    </li>
+                    <li>
+                        <a href="https://metacpan.org/module/Catalyst::Manual::Tutorial">Tutorial</a>
+                        <p>
+                            Learn how to build your first complete Catalyst application with all the nuts'n'bolts of modern
+                            web applications.
+                        </p>
+                    </li>
+                </ol>
+                <br>
+                <h2>Get the book</h2>
+                <h3>The Definitive Guide to Catalyst</h3>
+                <a href="http://www.amazon.co.uk/Definitive-Guide-Catalyst-Maintainable-Applications/dp/1430223650?&camp=2486&linkCode=wey&tag=enligperlorga-21&creative=8882" style="float:left; margin:0 12px 12px 0;"><img src="imgs/catalyst_book2.gif"></a>
+                <p>
+                    This book by Kieren Diment, Matt Trout and other core Catalyst developers, published by <a href="http://www.apress.com">Apress</a> is now available for purchase from <a href="http://www.amazon.co.uk/Definitive-Guide-Catalyst-Maintainable-Applications/dp/1430223650?&camp=2486&linkCode=wey&tag=enligperlorga-21&creative=8882">Amazon.com</a>, or get the <a href="http://www.apress.com/book/view/1430223650">eBook (PDF) from Apress</a>.
+                </p>
+            </div>
+        </div>
+    </article>
+    <footer>
+        <div class="inner">
+            <div class="column">
+                <h3>Getting started</h3>
+                <ul>
+                    <li><a href="https://metacpan.org/module/Catalyst::Runtime">Download</a></li>
+                    <li><a href="https://metacpan.org/module/Catalyst::Manual::Tutorial">Tutorial</a></li>
+                </ul>
+            </div>
+            <div class="column">
+                <h3>Getting help</h3>
+                <ul>
+                    <li><a href="https://metacpan.org/module/Catalyst::Manual">Documentation</a></li>
+                    <li><a href="http://wiki.catalystframework.org/wiki/">Wiki</a></li>
+                    <li><a href="https://metacpan.org/module/Catalyst::Manual::Cookbook">Cookbook</a></li>
+                    <li><a href="http://wiki.catalystframework.org/wiki/mailinglists">Mailing lists</a></li>
+                    <li><a href="http://wiki.catalystframework.org/wiki/livegroups">IRC</a></li>
+                    <li><a href="http://wiki.catalystframework.org/wiki/support">Commercial Support</a></li>
+                </ul>
+            </div>
+            <div class="column last">
+                <h3>Getting involved</h3>
+                <ul>
+                    <li><a href="https://metacpan.org/module/Catalyst::Manual::DevelopmentProcess">Developers</a></li>
+                    <li><a href="https://metacpan.org/module/Catalyst::Manual::ExtendingCatalyst">Extending Catalyst</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <div id="copyright">
+        <div class="inner">
+            <span class="copyright">Copyright 2012 Catalyst Foundation.</span>
+        </div>
+    </div>
+</body>
+</html>

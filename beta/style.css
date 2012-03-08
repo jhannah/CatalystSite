@@ -1,0 +1,225 @@
+/* Common */
+body {
+    font-family: "Lucida Grande", Verdana, Arial, sans-serif;
+    font-size:12px;
+    margin:0;
+    color:#444;
+    line-height:18px;
+    background:url('imgs/bkg.png') top left repeat-x;
+}
+
+img {
+    border:none;
+}
+
+/* Structure */
+.inner {
+    width:960px;
+    padding:0 20px;
+    margin:0 auto;
+}
+
+/* Headlines */
+h1,h2,h3 { font-family: "Lucida Grande", Arial,Helvetica; }
+h1 { font-size:1.8em; }
+h2 { font-size:1.6em; margin:0 0 1em 0;}
+h3 { font-size:1.3em; }
+
+/* Links */
+a,
+a:visited,
+a:link {
+    color:#b53821;
+    text-decoration:none;
+}
+a:hover {
+    text-decoration:underline;
+}
+
+/* Header */
+/* Logo bar */
+header#logobar {
+    height:90px;
+}
+header#logobar #search {
+    float:right;
+}
+header#logobar form {
+    margin:10px 0 0 0;
+}
+header#logobar a#logo {
+    float:left;
+    display:block;
+}
+header#logobar #search input { 
+    width:290px;
+    border:1px solid #ddd;
+    padding:5px;
+}
+header#logobar h1 {
+    color:rgb(202,50,34);
+    font-size:18px;
+    padding:32px 220px;
+}
+header#about {
+    background:rgb(175,64,32);
+    background: linear-gradient(top, rgb(175,64,32), rgb(229,90,46));
+    background: -o-linear-gradient(top, rgb(175,64,32), rgb(229,90,46));
+    background: -moz-linear-gradient(top, rgb(175,64,32), rgb(229,90,46));
+    background: -webkit-linear-gradient(top, rgb(175,64,32), rgb(229,90,46));
+    background: -ms-linear-gradient(top, rgb(175,64,32), rgb(229,90,46));   
+    color:#fff;
+    padding:32px 0;
+    height:70px;
+}
+header#about p {
+    color:#FAD7CF;
+    font-size:1.2em;
+    margin:.5em 0 0 0;
+    padding:0;
+    line-height:1.4em;
+}
+header#about h1 {
+    color:#fff;
+    margin:0 0 .5em 0;
+    padding:0;
+    font-size:2.25em;
+    letter-spacing:-0.03em;
+}
+
+#download img { float:left; margin:0 1em 0 0;}
+#download {
+    color:#222;
+    float:right;
+    background:#fff;
+    border-radius:8px 8px 8px 8px;
+    -moz-border-radius:8px;
+    -webkit-border-radius:8px;
+    width:276px;
+    padding:8px 12px;
+    margin:0 0 0 40px;
+}
+#download span 
+    { display:block }
+#download .getitnow a {
+    font-size:1.25em;    
+    line-height:130%;
+}
+#download .license, #download .version {
+    font-size:.9em;
+    line-height:140%;
+}
+#download .license {
+    color:#999;
+}
+
+/* Navigation Bar */
+nav {
+    background:#333;
+    float:left;
+    width:100%;
+}
+nav ul {
+    float:left;
+    background:#333;
+    padding:0;
+    margin:0;
+    width:960px;
+    font-size:14px;
+}
+nav li {
+    display:inline;
+}
+nav li a,
+nav li a:link,
+nav li a:visited {
+    padding:8px 1.25em;
+    background:#333;
+    color:#fff;
+    text-decoration:none;
+    float:left;
+    border-right:1px solid #444;
+}
+nav li a:hover {
+    background:#444;
+}
+nav li.active a {
+    background:#666;
+
+}
+
+/* Main content */
+article {
+    clear:both;
+    padding:18px 0;
+    background:url('imgs/navishadow.png') top left repeat-x;
+}
+
+/* Columns */
+.column {
+    width:290px;
+    float:left;
+    padding:13px 13px 13px 0;
+    margin:0 25px 0 0;
+}
+.column.last {
+    margin:0;
+    border-right:none;
+}
+.column.special {
+    background:#f6f6f6;
+    padding:13px;
+    margin:0 13px 0 -13px;
+    width:300px;
+}
+
+#platforms { 
+    text-align:center; 
+    margin:2em 0;
+}
+
+#getstarted ol {
+    padding:0 0 0 2em;
+    margin:0;
+    font-weight:bold;
+    font-size:1.2em;
+    font-family:"Lucida Grande",Arial;
+}
+#getstarted p {
+    font-weight:normal;
+    font-size:12px;
+    margin:.5em 0 1.5em 0;
+}
+
+/* Footer */
+footer {
+    clear:both;
+    margin:2em 0 0 0;
+    background:#474747 url('imgs/footerbkg.gif') top left repeat-x;
+    color:#fff;
+    padding:24px 0 0 0;
+    height:240px;
+    font-size:1.1em;
+}
+footer ul {
+    margin:1em 0 0 0;
+    padding:0;
+    list-style-type:none;
+}
+footer h3 { 
+    padding:0; 
+    margin:0 0 5px 0; 
+}
+footer li a,
+footer li a:link,
+footer li a:visited {
+    display:block;
+    padding:5px 0 5px 0;
+        color:#aaa;
+}
+#copyright {
+    background:#111;
+    color:#ddd;
+    font-size:.9em;
+    padding:10px 0;
+}
