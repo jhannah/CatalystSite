@@ -1,10 +1,13 @@
 /* Common */
+html {
+    font-size:100%;
+}
 body {
     font-family: "Lucida Grande", Verdana, Arial, sans-serif;
-    font-size:12px;
+    font-size:75%;
     margin:0;
     color:#444;
-    line-height:18px;
+    line-height:1.5em;
     background:url('imgs/bkg.png') top left repeat-x;
 }
 
@@ -36,6 +39,18 @@ a:hover {
     text-decoration:underline;
 }
 
+code {
+    font-size:1.2em;
+    font-weight:normal;
+}
+
+pre {
+    padding:.5em;
+    background:#f6f6f6;
+    display:block;
+    margin:1em 0;
+}
+
 /* Header */
 /* Logo bar */
 header#logobar {
@@ -58,7 +73,7 @@ header#logobar #search input {
 }
 header#logobar h1 {
     color:rgb(202,50,34);
-    font-size:18px;
+    font-size:1.5em;
     padding:32px 220px;
 }
 header#about {
@@ -125,7 +140,7 @@ nav ul {
     padding:0;
     margin:0;
     width:960px;
-    font-size:14px;
+    font-size:1.2em;
 }
 nav li {
     display:inline;
@@ -182,12 +197,10 @@ article {
     padding:0 0 0 2em;
     margin:0;
     font-weight:bold;
-    font-size:1.2em;
     font-family:"Lucida Grande",Arial;
 }
 #getstarted p {
     font-weight:normal;
-    font-size:12px;
     margin:.5em 0 1.5em 0;
 }
 
@@ -209,17 +222,21 @@ footer ul {
 footer h3 { 
     padding:0; 
     margin:0 0 5px 0; 
+    color:#fff;
 }
 footer li a,
 footer li a:link,
 footer li a:visited {
     display:block;
     padding:5px 0 5px 0;
-        color:#aaa;
+    color:#aaa;
 }
 #copyright {
     background:#111;
-    color:#ddd;
+    color:#ccc;
     font-size:.9em;
     padding:10px 0;
+}
+.loading {
+    font-weight:bold;
 }
