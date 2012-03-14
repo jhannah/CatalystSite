@@ -26,7 +26,7 @@ img {
 h1,h2,h3 { font-family: "Lucida Grande", Arial,Helvetica; }
 h1 { font-size:1.8em; }
 h2 { font-size:1.6em; margin:0 0 1em 0;}
-h3 { font-size:1.3em; }
+h3 { font-size:1.2em; }
 
 /* Links */
 a,
@@ -184,7 +184,7 @@ article {
 .column.special {
     background:#f6f6f6;
     padding:13px;
-    margin:0 13px 0 -13px;
+    margin:0 13px 13px -13px;
     width:300px;
 }
 
