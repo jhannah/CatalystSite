@@ -25,7 +25,7 @@
             <div id="download">
                 <a href="https://metacpan.org/module/Catalyst::Runtime"><img src="imgs/dl-hdd.png" alt="Download Catalyst"></a>
                 <span class="getitnow"><a href="https://metacpan.org/module/Catalyst::Runtime">Get started now!</a></span>
-                <span class="version">Catalyst 5.90015 - 30 Jun 2012</span>
+                <span class="version" id="catalyst_version"></span>
                 <span class="license">Open Source, GPL/Artistic</span>
             </div>
             <h2>Turbocharge your web development!</h2>
@@ -168,5 +168,51 @@
             <span class="copyright">Copyright 2012 Catalyst Foundation.</span>
         </div>
     </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script>
+	function parseISO8601(str) {
+ // we assume str is a UTC date ending in 'Z'
+
+ var parts = str.split('T'),
+ dateParts = parts[0].split('-'),
+ timeParts = parts[1].split('Z'),
+ timeSubParts = timeParts[0].split(':'),
+ timeSecParts = timeSubParts[2].split('.'),
+ timeHours = Number(timeSubParts[0]),
+ _date = new Date;
+
+ _date.setUTCFullYear(Number(dateParts[0]));
+ _date.setUTCMonth(Number(dateParts[1])-1);
+ _date.setUTCDate(Number(dateParts[2]));
+ _date.setUTCHours(Number(timeHours));
+ _date.setUTCMinutes(Number(timeSubParts[1]));
+ _date.setUTCSeconds(Number(timeSecParts[0]));
+ if (timeSecParts[1]) _date.setUTCMilliseconds(Number(timeSecParts[1]));
+
+ // by using setUTC methods the date has already been converted to local time(?)
+ return _date;
+}
+var monthLookup = {
+	0: "Jan",
+	1: "Feb",
+	2: "Mar",
+	3: "Apr",
+	4: "May",
+	5: "Jun",
+	6: "Jul",
+	7: "Aug",
+	8: "Sep",
+	9: "Oct",
+	10: "Nov",
+	11: "Dec"
+};
+	$.getJSON("http://api.metacpan.org/release/Catalyst-Runtime?callback=?", {
+    		format: "json"
+	}, function (data) {
+	    var date = parseISO8601(data.date);
+	    var verStr = data.version + " - " + date.getDate() + " " + monthLookup[date.getMonth()] + " " + date.getFullYear();
+            $('#catalyst_version').html(verStr);
+	});
+    </script>
 </body>
 </html>
