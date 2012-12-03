@@ -207,8 +207,14 @@ section {
     font-size:1.2em;
 }
 #sites .alexa {
+    margin-top:1em;
     color:#999;
     display:block;
+    font-size:80%;
+}
+#sites .alexa a,
+#sites .alexa a:visited {
+    color:#999;
 }
 
 /* Columns */
