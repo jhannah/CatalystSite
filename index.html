@@ -113,7 +113,7 @@
                     <h2>How do I get started?</h2>
                     <ol>
                         <li>
-                            <h3><a href="http://wiki.catalystframework.org/wiki/installation">Quick Install Guide</a></h3>
+                            <h3><a href="#install">Quick Install Guide</a></h3>
                             <p>
                                 For more details and other platforms read the extended <a href="http://wiki.catalystframework.org/wiki/installingcatalyst">Installing Catalyst guide</a>.
                             </p>
@@ -138,27 +138,63 @@
             
             <br style="clear:both" /><br />
 
+            <section id="install">
+                <h2>Quick install guide</h2>
+
+                <h3>Solution #1: With a fresh Perl installation (recommended for all platforms)</h3>
+                <p><strong>Why a fresh Perl installation is a good idea:</strong> <em>Having your own Perl interpreter in addition to the one provided by your system is generally a good idea because upgrading your system does not affect your development/production Perl installation and libraries. Plus, you will get the latest and greatest Perl version to work with.</em></p>
+                <p><strong>1. <a href="http://learn.perl.org/installing/">Install Perl</a></strong></p>
+                <p><a href="http://learn.perl.org/installing/">This guide</a> shows you how to install the latest stable Perl version for different platforms alongside invaluable tools like <a href="https://metacpan.org/module/local::lib">local::lib</a> (which allows the installation of CPAN modules like Catalyst without the need for root privileges) and the excellent <a href="https://metacpan.org/module/App::cpanminus">cpanm</a> installer.</p>
+                <p><strong>2. Install Catalyst</strong></p>
+                <p>Run the following command to install Catalyst using cpanm:</p>
+                <pre>cpanm&nbsp;Catalyst::Devel</pre>
+
+                <h3>Solution #2: With an already installed Perl</h3>
+                <p>If you haven't installed cpanm and local::lib yet, run the following command as an <strong>unprivileged</strong> (i.e. non-root) user to get everything up and running:</p>
+                <pre>curl&nbsp;-L&nbsp;cpanmin.us&nbsp;<b>|</b>&nbsp;<span class="kateBString">perl</span>&nbsp;-&nbsp;-l&nbsp;<span class="kateOthers">$HOME</span>/perl5&nbsp;App::cpanminus&nbsp;<span class="kateReserved"><b>local</b></span>::<span class="kateOthers">lib</span>&nbsp;<span class="kateOthers">Catalyst</span>::<span class="kateOthers">Devel</span></pre>
+                <p>This installs <a href="https://metacpan.org/module/App::cpanminus">cpanm</a>, <a href="https://metacpan.org/module/local::lib">local::lib</a> and of course Catalyst into your home directory.</p>
+                <p>If you already have cpanm installed, it's just a matter of:</p>
+                <pre>cpanm&nbsp;Catalyst::Devel</pre>
+
+                <h3>Detailed installation instructions</h3>
+                <p>
+                    You can find more in-depth information about possible ways to install Catalyst on various platforms in the
+                    <a href="http://wiki.catalystframework.org/wiki/installingcatalyst">Installing Catalyst</a> guide. 
+                </p>
+                <p>
+                    If you have any questions regarding the installation do not hesitate to swing by our 
+                    <a href="http://wiki.catalystframework.org/wiki/livegroups">IRC channel</a> or send a mail to the 
+                    <a href="http://wiki.catalystframework.org/wiki/mailinglists">Catalyst mailing list</a>.
+                </p>
+
+                <h3>Done ... Now what?</h3>
+
+                <p>Head on over to the <a href="https://metacpan.org/module/Catalyst::Manual::Tutorial">tutorial</a> to get started.</p>
+            </section>
+
+            <br style="clear:both" /><br />
+
             <section id="sites">
                 <h2>Featured sites using Catalyst</h2>
 
                 <ul>
                     <li>
                         <a class="site" href="http://www.bbc.co.uk/iplayer/">
-                            <img src="imgs/sites/dummy.jpg" alt="BBC iPlayer" />
+                            <img src="imgs/sites/116.jpg" alt="BBC iPlayer" />
                             BBC iPlayer
                         </a>
                         TV and radio highlights (<a href="http://www.bbc.co.uk/blogs/bbcinternet/2008/12/iplayer_day_performance_tricks.html">mention</a>)
                     </li>
                     <li>
                         <a class="site" href="http://www.123people.com/">
-                            <img src="imgs/sites/dummy.jpg" alt="123people.png" />
+                            <img src="imgs/sites/117.jpg" alt="123people.png" />
                             www.123people.com
                         </a>
                         Realtime people search engine (<a href="http://conferences.yapceurope.org/ye2010/sponsors.html">mention</a>) 
                     </li>
                     <li>
                         <a class="site" href="http://www.urbia.de/">
-                            <img src="imgs/sites/dummy.jpg" alt="urbia.png">
+                            <img src="imgs/sites/84.jpg" alt="urbia.png">
                             www.urbia.de
                         </a> 
                         Germany's most popular community for all things family
@@ -167,7 +203,7 @@
                     <li>
                     
                         <a class="site" href="http://www.magazines.com"> 
-                            <img src="imgs/sites/dummy.jpg" alt="Magazines.com" />
+                            <img src="imgs/sites/39.jpg" alt="Magazines.com" />
                             Magazines.com
                         </a>
                         Magazines.com is the oldest, the largest, and the most dependable magazine subscription service on the Internet.
@@ -175,7 +211,7 @@
                     </li>
                     <li>
                         <a class="site" href="http://www.freecycle.org/">
-                            <img src="imgs/sites/dummy.jpg" alt="freecycle.png" title="freecycle.org">
+                            <img src="imgs/sites/115.jpg" alt="freecycle.png" title="freecycle.org">
                             www.freecycle.org
                         </a>
                         Changing the world one gift at a time
@@ -183,7 +219,7 @@
                     </li>
                     <li>
                         <a class="site" href="http://www.tripwolf.com/"> 
-                            <img src="imgs/sites/dummy.jpg" alt="tripwolf" title="tripwolf.com">
+                            <img src="imgs/sites/111.jpg" alt="tripwolf" title="tripwolf.com">
                             www.tripwolf.com
                         </a>
                         Your travel guide (<a href="http://web.archiveorange.com/archive/v/c6s8C1mquZ6Rk9hhwnXE">mention</a>)
@@ -191,31 +227,23 @@
                     </li>
                     <li>
                         <a class="site" href="http://www.manchestereveningnews.co.uk/">
-                            <img src="imgs/sites/dummy.jpg" alt="Manchester Evening News">
+                            <img src="imgs/sites/40.jpg" alt="Manchester Evening News">
                             Manchester Evening News
                         </a>
                         Site of the English daily newspaper (<a href="http://www.nabble.com/New-website-using-Catalyst-tp12261536p12271398.html">announcement</a>)
                         <span class="alexa">Alexa Traffic Rank: <a href="http://www.alexa.com/data/details/traffic_details/manchestereveningnews.co.uk">16,860</a></span>
                     </li>
                     <li>
-                        <a class="site" href="http://www.Foxtons.co.uk">
-                            <img src="imgs/sites/dummy.jpg" alt="Foxtons.co.uk">
+                        <a class="site" href="http://www.foxtons.co.uk">
+                            <img src="imgs/sites/35.jpg" alt="Foxtons.co.uk">
                             Foxtons.co.uk
                         </a>
                         London's Leading Estate Agent.
                         <span class="alexa">Alexa Traffic Rank: <a href="http://www.alexa.com/data/details/traffic_details/foxtons.co.uk">20,962</a></span>
                     </li>
                     <li>
-                        <a class="site" href="http://www.evo.com/">
-                            <img src="imgs/sites/dummy.jpg" alt="Evo">
-                            www.evo.com
-                        </a>
-                        Eco-friendly products, services, and information (<a href="http://www.nabble.com/New-website-using-Catalyst-tt12261536.html#a12280290">announcement</a>)
-                        <span class="alexa">Alexa Traffic Rank: <a href="http://www.alexa.com/data/details/traffic_details/evo.com">41,854</a></span>
-                    </li>
-                    <li>
                         <a class="site" href="http://www.takkle.com"> 
-                            <img src="imgs/sites/dummy.jpg" alt="Takkle">
+                            <img src="imgs/sites/47.jpg" alt="Takkle">
                             takkle.com
                         </a>
                         High School Sports Social Network. 
@@ -223,7 +251,7 @@
                     </li>
                     <li>
                         <a class="site" href="http://www.misterpoll.com"> 
-                            <img src="imgs/sites/dummy.jpg" alt="Mister Poll">
+                            <img src="imgs/sites/113.jpg" alt="Mister Poll">
                             Mister Poll
                         </a>
                         Online polls (<a href="http://www.nabble.com/ANNOUNCE:-New-Catalyst-Powered-Site:-Mister-Poll-tt14260502.html">announcement</a>)
@@ -231,14 +259,14 @@
                     </li>
                     <li>
                         <a class="site" href="http://osx.iusethis.com"> 
-                            <img src="imgs/sites/dummy.jpg" alt="i use this">
+                            <img src="imgs/sites/114.jpg" alt="i use this">
                             iusethis.com
                         </a>
                         Organize and discover apps.
                         <span class="alexa">Alexa Traffic Rank: <a href="http://www.alexa.com/data/details/traffic_details/iusethis.com">71,957</a></span>
                     </li>
                 </ul>
-                <p>
+                <p style="clear:both;">
                     You'll find more <a href="http://wiki.catalystframework.org/wiki/sitesrunningcatalyst">sites using Catalyst in the Catalyst wiki</a>.
                 </p>
             </section>
