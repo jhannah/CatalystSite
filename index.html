@@ -151,10 +151,10 @@
 
                 <h3>Solution #2: With an already installed Perl</h3>
                 <p>If you haven't installed cpanm and local::lib yet, run the following command as an <strong>unprivileged</strong> (i.e. non-root) user to get everything up and running:</p>
-                <pre>curl&nbsp;-L&nbsp;cpanmin.us&nbsp;<b>|</b>&nbsp;<span class="kateBString">perl</span>&nbsp;-&nbsp;-l&nbsp;<span class="kateOthers">$HOME</span>/perl5&nbsp;App::cpanminus&nbsp;<span class="kateReserved"><b>local</b></span>::<span class="kateOthers">lib</span>&nbsp;<span class="kateOthers">Catalyst</span>::<span class="kateOthers">Devel</span></pre>
+                <pre>curl -L cpanmin.us | perl - -l $HOME/perl5 App::cpanminus local::lib Catalyst::Devel</pre>
                 <p>This installs <a href="https://metacpan.org/module/App::cpanminus">cpanm</a>, <a href="https://metacpan.org/module/local::lib">local::lib</a> and of course Catalyst into your home directory.</p>
                 <p>If you already have cpanm installed, it's just a matter of:</p>
-                <pre>cpanm&nbsp;Catalyst::Devel</pre>
+                <pre>cpanm Catalyst::Devel</pre>
 
                 <h3>Detailed installation instructions</h3>
                 <p>
