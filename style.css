@@ -3,12 +3,15 @@ html {
     font-size:100%;
 }
 body {
-    font-family: "Lucida Grande", Verdana, Arial, sans-serif;
-    font-size:75%;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size:90%;
     margin:0;
     color:#444;
     line-height:1.5em;
     background:#fff url('imgs/bkg.png') top left repeat-x;
+    font-smoothing: antialiased;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
 }
 
 img {
@@ -23,7 +26,7 @@ img {
 }
 
 /* Headlines */
-h1,h2,h3 { font-family: "Lucida Grande", Arial,Helvetica; }
+h1,h2,h3 { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
 h1 { font-size:1.8em; }
 h2 { font-size:1.6em; margin:0 0 1em 0;}
 h3 { font-size:1.2em; }
@@ -84,8 +87,8 @@ header#about {
     background: -webkit-linear-gradient(top, rgb(175,64,32), rgb(229,90,46));
     background: -ms-linear-gradient(top, rgb(175,64,32), rgb(229,90,46));   
     color:#fff;
-    padding:32px 0;
-    height:70px;
+    padding:24px 0;
+    height:75px;
 }
 header#about p {
     color:#FAD7CF;
@@ -100,6 +103,9 @@ header#about h1 {
     padding:0;
     font-size:2.25em;
     letter-spacing:-0.03em;
+}
+header#about h2 {
+    margin-bottom:0em;
 }
 
 #download img { float:left; margin:0 1em 0 0;}
@@ -117,7 +123,8 @@ header#about h1 {
 #download span 
     { display:block }
 #download .getitnow a {
-    font-size:1.25em;    
+    font-size:1.2em;    
+    font-weight:bold;
     line-height:130%;
 }
 #download .license, #download .version {
@@ -133,6 +140,7 @@ nav {
     background:#333;
     float:left;
     width:100%;
+    font-weight:bold;
 }
 nav ul {
     float:left;
@@ -140,7 +148,6 @@ nav ul {
     padding:0;
     margin:0;
     width:960px;
-    font-size:1.2em;
 }
 nav li {
     display:inline;
@@ -170,6 +177,40 @@ article {
     background:url('imgs/navishadow.png') top left repeat-x;
 }
 
+section {
+    clear:both;
+}
+
+#sites ul {
+    list-style-type:none;
+    padding:0;
+    margin:0;
+}
+
+#sites li {
+    padding:0;
+    margin:0 38px 0 0;
+    width:46%;
+    height:150px;
+    float:left;
+    display:block;
+}
+
+#sites li img {
+    float:left;
+    margin:0 16px 16px 0;
+}
+
+#sites .site {
+    font-weight:bold;
+    display:block;
+    font-size:1.2em;
+}
+#sites .alexa {
+    color:#999;
+    display:block;
+}
+
 /* Columns */
 .column {
     width:290px;
@@ -197,7 +238,6 @@ article {
     padding:0 0 0 2em;
     margin:0;
     font-weight:bold;
-    font-family:"Lucida Grande",Arial;
 }
 #getstarted p {
     font-weight:normal;

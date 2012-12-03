@@ -39,99 +39,210 @@
         <div class="inner">
             <ul>
                 <li class="active"><a href="/">About</a></li>
-                <li><span><a href="https://metacpan.org/module/Catalyst::Manual">Documentation</a></span></li>
-                <li><span><a href="http://wiki.catalystframework.org/wiki/">Wiki</a></span></li>
-                <li><span><a href="https://metacpan.org/module/Catalyst::Runtime">Download</a></span></li>
-                <li><span><a href="http://wiki.catalystframework.org/wiki/Support">Support</a></span></li>
-                <li><span><a href="http://wiki.catalystframework.org/wiki/adventcalendararticles">How-Tos</a></span></li>
+                <li><a href="#sites">Sites using Catalyst</a></li>
+                <li><a href="https://metacpan.org/module/Catalyst::Manual">Documentation</a></li>
+                <li><a href="http://wiki.catalystframework.org/wiki/">Wiki</a></li>
+                <li><a href="https://metacpan.org/module/Catalyst::Runtime">Download</a></li>
+                <li><a href="http://wiki.catalystframework.org/wiki/Support">Support</a></li>
+                <li><a href="http://wiki.catalystframework.org/wiki/adventcalendararticles">How-Tos</a></li>
             </ul>
         </div>
     </nav>
     <article>
         <div class="inner">
-            <div class="column">
-                <h2>What is Catalyst?</h2>
-                <p>
-                    <strong>Catalyst is an open-source Perl <a href="https://metacpan.org/module/Catalyst::Manual::About#The-MVC-pattern">MVC</a> web framework that encourages 
-                    rapid development and clean design without getting in your way by forcing rules.</strong>
-                </p>
-                <p>
-                    We tend to keep things small and simple. This gives us robustness and scalability - your 
-                    Catalyst-based app also inherits those. No complicated object hierarchies.
-                </p>
-                <p>
-                    Why reinvent the wheel? When you write your app with Catalyst, you don't have to care much 
-                    about session handling or authorization. You just use it. <a href="https://metacpan.org">CPAN</a> has a vast amount of power, 
-                    which we bring to you. If you don't like something in default setup, why not replace it? 
-                    There Is More Than One Way To Do It. You can choose from a wealth of available models and 
-                    views, drop in a bunch of plugins and create the setup that fits you best.
-                </p>
-                <p>
-                    <strong>Many high-profile sites like the <a href="http://www.bbc.co.uk/iplayer/">BBC iPlayer</a>, 
-                    <a href="http://www.123people.com">123people</a>, <a href="http://www.magazines.com">magazines.com</a> and <a href="http://www.urbia.de">urbia.de</a> are already using Catalyst.</strong>
-                    Check out some other <a href="http://wiki.catalystframework.org/wiki/sitesrunningcatalyst">sites that are using Catalyst</a>.
-                </p>
-            </div>
-            <div class="column special">
-                <h2>Why Catalyst?</h2>
-                <h3>Versatile Models</h3>
-                <p>
-                    Use a powerful database ORM like <a href="https://metacpan.org/module/DBIx::Class">DBIx::Class</a> 
-                    for your model, plain old <a href="https://metacpan.org/module/Catalyst::Model::DBI">DBI</a> 
-                    or even <a href="https://metacpan.org/module/Catalyst::Model::LDAP">LDAP</a> - Catalyst supports a
-                    <a href="https://metacpan.org/search?q=Catalyst%3A%3AModel">wide range of models</a>.
-                </p>
-                <h3>Flexible Views</h3>
-                <p>
-                    Use whatever templating language you like best: 
-                    <a href="http://www.template-toolkit.org/">Template::Toolkit</a>, 
-                    <a href="https://metacpan.org/module/Mason">Mason 2</a>, 
-                    <a href="https://metacpan.org/module/HTML::Template">HTML::Template</a> and many more are fully supported.
-                </p>
-                <h3>Integrated Development server</h3>
-                <p>
-                    Catalyst comes with its own lightweight test server for development. It automatically restarts
-                    when your sources have changed, so you get instant results! 
-                </p>
-                <h3>Works with all major webservers</h3>
-                <p>
-                    Catalyst 5.9 has native <a href="http://plackperl.org/">PSGI/Plack</a> support which makes deployment for most
-                    webservers a no-brainer. Plus, there are loads of <a href="https://metacpan.org/search?q=Catalyst%3A%3AEngine">engines</a> targeting specific servers/protocols like <a href="https://metacpan.org/module/Catalyst::Engine::Apache">Apache/mod_perl</a> or FastCGI.
-                </p>
-                <h3>Ready-to-use plugins</h3>
-                <p>
-                    Don't re-invent the wheel! Use well-tested plug-ins for 
-                    <a href="https://metacpan.org/module/Catalyst::Plugin::Session">session management</a>, 
-                    <a href="https://metacpan.org/module/Catalyst::Plugin::Authentication">user authentication</a>, 
-                    <a href="https://metacpan.org/module/Catalyst::Plugin::Cache">caching</a> and
-                    <a href="https://metacpan.org/search?q=Catalyst%3A%3APlugin&amp;mode=all">much more</a>.
-                </p>            
-            </div>
-            <div class="column last" id="getstarted">
-                <h2>How do I get started?</h2>
-                <ol>
+            <section id="main">
+                <div class="column">
+                    <h2>What is Catalyst?</h2>
+                    <p>
+                        <strong>Catalyst is an open-source Perl <a href="https://metacpan.org/module/Catalyst::Manual::About#The-MVC-pattern">MVC</a> web framework that encourages 
+                        rapid development and clean design without getting in your way by forcing rules.</strong>
+                    </p>
+                    <p>
+                        We tend to keep things small and simple. This gives us robustness and scalability - your 
+                        Catalyst-based app also inherits those. No complicated object hierarchies.
+                    </p>
+                    <p>
+                        Why reinvent the wheel? When you write your app with Catalyst, you don't have to care much 
+                        about session handling or authorization. You just use it. <a href="https://metacpan.org">CPAN</a> has a vast amount of power, 
+                        which we bring to you. If you don't like something in default setup, why not replace it? 
+                        There Is More Than One Way To Do It. You can choose from a wealth of available models and 
+                        views, drop in a bunch of plugins and create the setup that fits you best.
+                    </p>
+                    <p>
+                        <strong>Many high-profile sites like the <a href="http://www.bbc.co.uk/iplayer/">BBC iPlayer</a>, 
+                        <a href="http://www.123people.com">123people</a>, <a href="http://www.magazines.com">magazines.com</a> and <a href="http://www.urbia.de">urbia.de</a> are already using Catalyst.</strong>
+                        Check out some other <a href="#sites">sites which are using Catalyst</a>.
+                    </p>
+                </div>
+                <div class="column special">
+                    <h2>Why Catalyst?</h2>
+                    <h3>Versatile Models</h3>
+                    <p>
+                        Use a powerful database ORM like <a href="https://metacpan.org/module/DBIx::Class">DBIx::Class</a> 
+                        for your model, plain old <a href="https://metacpan.org/module/Catalyst::Model::DBI">DBI</a> 
+                        or even <a href="https://metacpan.org/module/Catalyst::Model::LDAP">LDAP</a> - Catalyst supports a
+                        <a href="https://metacpan.org/search?q=Catalyst%3A%3AModel">wide range of models</a>.
+                    </p>
+                    <h3>Flexible Views</h3>
+                    <p>
+                        Use whatever templating language you like best: 
+                        <a href="http://www.template-toolkit.org/">Template::Toolkit</a>, 
+                        <a href="https://metacpan.org/module/Mason">Mason 2</a>, 
+                        <a href="https://metacpan.org/module/HTML::Template">HTML::Template</a> and many more are fully supported.
+                    </p>
+                    <h3>Integrated Development server</h3>
+                    <p>
+                        Catalyst comes with its own lightweight test server for development. It automatically restarts
+                        when your sources have changed, so you get instant results! 
+                    </p>
+                    <h3>Works with all major webservers</h3>
+                    <p>
+                        Catalyst 5.9 has native <a href="http://plackperl.org/">PSGI/Plack</a> support which makes deployment for most
+                        webservers a no-brainer. Plus, there are loads of <a href="https://metacpan.org/search?q=Catalyst%3A%3AEngine">engines</a> targeting specific servers/protocols like <a href="https://metacpan.org/module/Catalyst::Engine::Apache">Apache/mod_perl</a> or FastCGI.
+                    </p>
+                    <h3>Ready-to-use plugins</h3>
+                    <p>
+                        Don't re-invent the wheel! Use well-tested plug-ins for 
+                        <a href="https://metacpan.org/module/Catalyst::Plugin::Session">session management</a>, 
+                        <a href="https://metacpan.org/module/Catalyst::Plugin::Authentication">user authentication</a>, 
+                        <a href="https://metacpan.org/module/Catalyst::Plugin::Cache">caching</a> and
+                        <a href="https://metacpan.org/search?q=Catalyst%3A%3APlugin&amp;mode=all">much more</a>.
+                    </p>            
+                </div>
+                <div class="column last" id="getstarted">
+                    <h2>How do I get started?</h2>
+                    <ol>
+                        <li>
+                            <h3><a href="http://wiki.catalystframework.org/wiki/installation">Quick Install Guide</a></h3>
+                            <p>
+                                For more details and other platforms read the extended <a href="http://wiki.catalystframework.org/wiki/installingcatalyst">Installing Catalyst guide</a>.
+                            </p>
+                        </li>
+                        <li>
+                            <h3><a href="https://metacpan.org/module/Catalyst::Manual::Tutorial">Tutorial</a></h3>
+                            <p>
+                                Learn how to build your first complete Catalyst application with all the nuts'n'bolts of modern
+                                web applications.
+                            </p>
+                        </li>
+                    </ol>
+                    <br>
+                    <h2>Get the book</h2>
+                    <h3>The Definitive Guide to Catalyst</h3>
+                    <a href="http://www.amazon.co.uk/Definitive-Guide-Catalyst-Maintainable-Applications/dp/1430223650?&amp;camp=2486&amp;linkCode=wey&amp;tag=enligperlorga-21&amp;creative=8882" style="float:left; margin:0 12px 12px 0;"><img src="imgs/catalyst_book2.gif" alt="The Definitive Guide to Catalyst book"></a>
+                    <p>
+                        This book by Kieren Diment, Matt Trout and other core Catalyst developers, published by <a href="http://www.apress.com">Apress</a> is now available for purchase from <a href="http://www.amazon.co.uk/Definitive-Guide-Catalyst-Maintainable-Applications/dp/1430223650?&amp;camp=2486&amp;linkCode=wey&amp;tag=enligperlorga-21&amp;creative=8882">Amazon.com</a>, or get the <a href="http://www.apress.com/9781430223658">eBook (PDF) from Apress</a>.
+                    </p>
+                </div>
+            </section>
+            
+            <br style="clear:both" /><br />
+
+            <section id="sites">
+                <h2>Sites using Catalyst</h2>
+
+                <ul>
                     <li>
-                        <h3><a href="http://wiki.catalystframework.org/wiki/installation">Quick Install Guide</a></h3>
-                        <p>
-                            For more details and other platforms read the extended <a href="http://wiki.catalystframework.org/wiki/installingcatalyst">Installing Catalyst guide</a>.
-                        </p>
+                        <a class="site" href="http://www.bbc.co.uk/iplayer/">
+                            <img src="imgs/sites/dummy.jpg" alt="BBC iPlayer" />
+                            BBC iPlayer
+                        </a>
+                        TV and radio highlights (<a href="http://www.bbc.co.uk/blogs/bbcinternet/2008/12/iplayer_day_performance_tricks.html">mention</a>)
                     </li>
                     <li>
-                        <h3><a href="https://metacpan.org/module/Catalyst::Manual::Tutorial">Tutorial</a></h3>
-                        <p>
-                            Learn how to build your first complete Catalyst application with all the nuts'n'bolts of modern
-                            web applications.
-                        </p>
+                        <a class="site" href="http://www.123people.com/">
+                            <img src="imgs/sites/dummy.jpg" alt="123people.png" />
+                            www.123people.com
+                        </a>
+                        Realtime people search engine (<a href="http://conferences.yapceurope.org/ye2010/sponsors.html">mention</a>) 
                     </li>
-                </ol>
-                <br>
-                <h2>Get the book</h2>
-                <h3>The Definitive Guide to Catalyst</h3>
-                <a href="http://www.amazon.co.uk/Definitive-Guide-Catalyst-Maintainable-Applications/dp/1430223650?&amp;camp=2486&amp;linkCode=wey&amp;tag=enligperlorga-21&amp;creative=8882" style="float:left; margin:0 12px 12px 0;"><img src="imgs/catalyst_book2.gif" alt="The Definitive Guide to Catalyst book"></a>
+                    <li>
+                        <a class="site" href="http://www.urbia.de/">
+                            <img src="imgs/sites/dummy.jpg" alt="urbia.png">
+                            www.urbia.de
+                        </a> 
+                        Germany's most popular community for all things family
+                        <span class="alexa">Alexa Traffic Rank: <a href="http://www.alexa.com/siteinfo/urbia.de">6,092</a></span>
+                    </li>
+                    <li>
+                    
+                        <a class="site" href="http://www.magazines.com"> 
+                            <img src="imgs/sites/dummy.jpg" alt="Magazines.com" />
+                            Magazines.com
+                        </a>
+                        Magazines.com is the oldest, the largest, and the most dependable magazine subscription service on the Internet.
+                        <span class="alexa">Alexa Traffic Rank: <a href="http://www.alexa.com/siteinfo/magazines.com">11,163</a></span>
+                    </li>
+                    <li>
+                        <a class="site" href="http://www.freecycle.org/">
+                            <img src="imgs/sites/dummy.jpg" alt="freecycle.png" title="freecycle.org">
+                            www.freecycle.org
+                        </a>
+                        Changing the world one gift at a time
+                        <span class="alexa">Alexa Traffic Rank: <a href="http://www.alexa.com/siteinfo/freecycle.org">14,411</a></span>
+                    </li>
+                    <li>
+                        <a class="site" href="http://www.tripwolf.com/"> 
+                            <img src="imgs/sites/dummy.jpg" alt="tripwolf" title="tripwolf.com">
+                            www.tripwolf.com
+                        </a>
+                        Your travel guide (<a href="http://web.archiveorange.com/archive/v/c6s8C1mquZ6Rk9hhwnXE">mention</a>)
+                        <span class="alexa">Alexa Traffic Rank: <a href="http://www.alexa.com/siteinfo/tripwolf.com">16,603</a></span>
+                    </li>
+                    <li>
+                        <a class="site" href="http://www.manchestereveningnews.co.uk/">
+                            <img src="imgs/sites/dummy.jpg" alt="Manchester Evening News">
+                            Manchester Evening News
+                        </a>
+                        Site of the English daily newspaper (<a href="http://www.nabble.com/New-website-using-Catalyst-tp12261536p12271398.html">announcement</a>)
+                        <span class="alexa">Alexa Traffic Rank: <a href="http://www.alexa.com/data/details/traffic_details/manchestereveningnews.co.uk">16,860</a></span>
+                    </li>
+                    <li>
+                        <a class="site" href="http://www.Foxtons.co.uk">
+                            <img src="imgs/sites/dummy.jpg" alt="Foxtons.co.uk">
+                            Foxtons.co.uk
+                        </a>
+                        London's Leading Estate Agent.
+                        <span class="alexa">Alexa Traffic Rank: <a href="http://www.alexa.com/data/details/traffic_details/foxtons.co.uk">20,962</a></span>
+                    </li>
+                    <li>
+                        <a class="site" href="http://www.evo.com/">
+                            <img src="imgs/sites/dummy.jpg" alt="Evo">
+                            www.evo.com
+                        </a>
+                        Eco-friendly products, services, and information (<a href="http://www.nabble.com/New-website-using-Catalyst-tt12261536.html#a12280290">announcement</a>)
+                        <span class="alexa">Alexa Traffic Rank: <a href="http://www.alexa.com/data/details/traffic_details/evo.com">41,854</a></span>
+                    </li>
+                    <li>
+                        <a class="site" href="http://www.takkle.com"> 
+                            <img src="imgs/sites/dummy.jpg" alt="Takkle">
+                            takkle.com
+                        </a>
+                        High School Sports Social Network. 
+                        <span class="alexa">Alexa Traffic Rank: <a href="http://www.alexa.com/data/details/traffic_details/takkle.com">43,646</a></span>
+                    </li>
+                    <li>
+                        <a class="site" href="http://www.misterpoll.com"> 
+                            <img src="imgs/sites/dummy.jpg" alt="Mister Poll">
+                            Mister Poll
+                        </a>
+                        Online polls (<a href="http://www.nabble.com/ANNOUNCE:-New-Catalyst-Powered-Site:-Mister-Poll-tt14260502.html">announcement</a>)
+                        <span class="alexa">Alexa Traffic Rank: <a href="http://www.alexa.com/data/details/traffic_details/misterpoll.com">68,363</a></span>
+                    </li>
+                    <li>
+                        <a class="site" href="http://osx.iusethis.com"> 
+                            <img src="imgs/sites/dummy.jpg" alt="i use this">
+                            iusethis.com
+                        </a>
+                        Organize and discover apps.
+                        <span class="alexa">Alexa Traffic Rank: <a href="http://www.alexa.com/data/details/traffic_details/iusethis.com">71,957</a></span>
+                        For tips and tricks from behind the scenes of the iusethis development check out Marcus' <a href="http://dev.thefeed.no/stuff/bag of tricksÈrom iusethis.pdf" title="marcus">Bag of Tricks from IUseThis</a> talk.
+                    </li>
+                </ul>
                 <p>
-                    This book by Kieren Diment, Matt Trout and other core Catalyst developers, published by <a href="http://www.apress.com">Apress</a> is now available for purchase from <a href="http://www.amazon.co.uk/Definitive-Guide-Catalyst-Maintainable-Applications/dp/1430223650?&amp;camp=2486&amp;linkCode=wey&amp;tag=enligperlorga-21&amp;creative=8882">Amazon.com</a>, or get the <a href="http://www.apress.com/9781430223658">eBook (PDF) from Apress</a>.
+                    You'll find more <a href="http://wiki.catalystframework.org/wiki/sitesrunningcatalyst">sites using Catalyst in the Catalyst wiki</a>.
                 </p>
-            </div>
+            </section>
         </div>
     </article>
     <footer>
